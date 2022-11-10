@@ -1,0 +1,44 @@
+* {
+    user-select:none;
+}
+.container {
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    justify-content:center;
+    height:100%;
+    width:100%;
+}
+.container > div {
+    background:rgb(53, 89, 108);
+    width:6vw;
+    height:7vw;
+    border:0.1vw solid black;
+    font-family:'Poppins', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:4vw;
+    transition:0.15s;
+}
+.container > div:hover {
+    filter:contrast(80%);
+    cursor:pointer;
+    transition:0.15s;
+}
+.input {
+    grid-column:1 / span 4;
+    width:24.6vw !important;
+}
+.input > input {
+    width:100%;
+    height:95%;
+    font-size:4.5vw;
+    font-family:'Poppins', sans-serif;
+    color:#333333;
+}
+#backbutton {
+    font-size:2vw !important;
+}
+.operator {
+    background:#ff9c3a !important;
+}
